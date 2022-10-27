@@ -10,70 +10,126 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <style>
- 
+      .wr{
+        color: red;
+      }
+      
     </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container-fluid">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="image/logo.webp" alt="" width="60" height="60">
+            </a>
+          </div>
+      <a class="navbar-brand" href="#" style="color:white ;">Unspoken Words</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color:white ;">Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white ;">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="color:white ;" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"  href="poetry.html">Poetry</a></li>
+              <li><a class="dropdown-item" href="sci.html">Science Fiction</a></li>
+              <li><a class="dropdown-item" href="history.html">History</a></li>
+              <li><a class="dropdown-item" href="islam.html">Islam</a></li>
+              <li><a class="dropdown-item" href="documentaries.html">Documentaries</a></li>
+            </ul>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner container mt-4">
+      <div class="carousel-item active">
+        <img src="image/sl1.jpg" class="d-block w-100" height="600px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/sl2.webp" class="d-block w-100" height="600px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/sl3.jpg" class="d-block w-100" height="600px" alt="...">
+      </div>
+    </div>
+  </div>
     <div class="container-fluid container">
         <div class="row h1 mt-4"><center>Poetry Books</center></div>
     <div class="row">
+      <!-- Card#1 -->
         <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
             <div class="card" style="width: 18rem;">
                 <img src="images/1.jpg" class="card-img-top" height="380px alt="...">
                 <div class="card-body">
                   <h5 class="card-title">MILK AND HONEY</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Info</a>
                 </div>
               </div>
             </div>
+            <!-- Card#2 -->
             <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                 <div class="card" style="width: 18rem;">
                     <img src="images/keep.jpg" class="card-img-top" height="380px alt="...">
                     <div class="card-body">
                       <h5 class="card-title">THE WORLD KEEPS ENDING, AND THE WORLD GOES ON</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Info</a>
                     </div>
                   </div>
                 </div>
+                <!-- Card#3 -->
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                     <div class="card" style="width: 18rem;">
                         <img src="images/dead.webp" class="card-img-top" height="380px alt="...">
                         <div class="card-body">
                           <h5 class="card-title">DON'T CALL US DEAD</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">Info</a>
                         </div>
                       </div>
                     </div>
+                    <!-- Card#4 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img src="images/deaf.jpg" class="card-img-top" height="380px alt="...">
                             <div class="card-body">
                               <h5 class="card-title">DEAF REPUBLIC</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">Info</a>
                             </div>
                           </div>
                         </div>
+                        <!-- Card#5 -->
                         <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                             <div class="card" style="width: 18rem;">
                                 <img src="images/uncom.jpg" class="card-img-top" height="380px" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">I HOPE THIS MAKES YOU UNCOMFORTABLE</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5">Info</a>
                                 </div>
                               </div>
                             </div>
+                            <!-- Card#6 -->
                             <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="images/pillow.jpg" class="card-img-top" height="380px alt="...">
+                                    <img src="images/pillow.jpg" class="card-img-top" height="380px alt="...>
                                     <div class="card-body">
                                       <h5 class="card-title">PILLOW THOUGHTS</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal6">Info</a>
                                     </div>
                                   </div>
                                 </div>
@@ -92,6 +148,137 @@
                                                                                                                  
       </div>
     </div>
+
+    <!-- Modal#1 -->
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal-header -->
+          <div class="modal-header">
+            <h5 class="modal-title"><img src="images/1.jpg" height="300px" width="100%" alt=""></h5>
+          </div>
+          <!-- Modal-body -->
+          <div class="modal-body">
+           <em><p>Milk and Honey</p></em>
+            <strong><p>Rs:2000</p></strong>
+            <em>Writter:<p class="wr">Rupi Kaur</p></em>
+          </div>
+          <!-- Modal-footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Modal#2 -->
+        <div class="modal" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal-header -->
+              <div class="modal-header">
+                <h5 class="modal-title"><img src="images/keep.jpg" height="300px" width="100%" alt=""></h5>
+              </div>
+              <!-- Modal-body -->
+              <div class="modal-body">
+               <em><p>The World Keeps Ending, and the World Goes On</p></em>
+                <strong><p>Rs:1800</p></strong>
+                <em>Writter:<p class="wr">Franny Choi</p></em>
+              </div>
+              <!-- Modal-footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Modal#3 -->
+         <div class="modal" id="myModal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal-header -->
+              <div class="modal-header">
+                <h5 class="modal-title"><img src="images/dead.webp" height="300px" width="100%" alt=""></h5>
+              </div>
+              <!-- Modal-body -->
+              <div class="modal-body">
+               <em><p>Don't Call Us Dead</p></em>
+                <strong><p>Rs:2500</p></strong>
+                <em>Writter:<p class="wr">Danez Smith</p></em>
+              </div>
+              <!-- Modal-footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal#4 -->
+        <div class="modal" id="myModal4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal-header -->
+              <div class="modal-header">
+                <h5 class="modal-title"><img src="images/deaf.jpg" height="300px" width="100%" alt=""></h5>
+              </div>
+              <!-- Modal-body -->
+              <div class="modal-body">
+               <em><p>Deaf Republic</p></em>
+                <strong><p>Rs:2000</p></strong>
+                <em>Writter:<p class="wr">Ilya Kaminsky</p></em>
+              </div>
+              <!-- Modal-footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Modal#5 -->
+         <div class="modal" id="myModal5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal-header -->
+              <div class="modal-header">
+                <h5 class="modal-title"><img src="images/uncom.jpg" height="300px" width="100%" alt=""></h5>
+              </div>
+              <!-- Modal-body -->
+              <div class="modal-body">
+               <em><p>I Hope This Makes You Uncomfortable</p></em>
+                <strong><p>Rs:1500</p></strong>
+                <em>Writter:<p class="wr">Kat Savage</p></em>
+              </div>
+              <!-- Modal-footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Modal#6 -->
+         <div class="modal" id="myModal6">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal-header -->
+              <div class="modal-header">
+                <h5 class="modal-title"><img src="images/pillow.jpg" height="300px" width="100%" alt=""></h5>
+              </div>
+              <!-- Modal-body -->
+              <div class="modal-body">
+               <em><p>Pillow Thoughts</p></em>
+                <strong><p>Rs:2200</p></strong>
+                <em>Writter:<p class="wr">Courtney Peppernell</p></em>
+              </div>
+              <!-- Modal-footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
     
 </body>
 </html>
