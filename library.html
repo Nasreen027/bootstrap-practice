@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <div class="container-fluid container">
-    <div class="row h1 mt-4"><center> Library</center></div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-        <div class="card" style="width: 18rem;">
-            <img src="images/posterpoet.webp" class="card-img-top" height="350px" alt="...">
+  </head>
+  <body>
+    <div class="container-fluid container">
+      <div class="row h1 mt-4"><center>Library</center></div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/posterpoet.webp"
+              class="card-img-top"
+              height="350px"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Poetry</h5>
-              <p class="card-text">Let's discover Universe with us by reading top Writters Thoughts and Experiments.
+              <p class="card-text">
+                Let's discover Universe with us by reading top Writters Thoughts
+                and Experiments.
               </p>
-              <a href="poetry.html" class="btn btn-primary">Collection</a>
+              <a
+                href="poetry.html"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+                >Collection</a
+              >
             </div>
           </div>
         </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-    <div class="card" style="width: 18rem;">
-        <img src="images/pos-sci.jpg" class="card-img-top" height="350px" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Science Fiction</h5>
-          <p class="card-text">Let's discover Universe with us by reading top Writters Thoughts and Experiments.
-          </p>
-          <a href="sci.html" class="btn btn-primary">Collection</a>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/pos-sci.jpg"
+              class="card-img-top"
+              height="350px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Science Fiction</h5>
+              <p class="card-text">
+                Let's discover Universe with us by reading top Writters Thoughts
+                and Experiments.
+              </p>
+              <a href="sci.html" class="btn btn-primary">Collection</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-        <div class="card" style="width: 18rem;">
-            <img src="images/isl-pos.jpg" class="card-img-top" height="350px" alt="...">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/isl-pos.jpg"
+              class="card-img-top"
+              height="350px"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Islamic</h5>
-              <p class="card-text">Let's discover Universe with us by reading top Writters Thoughts and Experiments.
+              <p class="card-text">
+                Let's discover Universe with us by reading top Writters Thoughts
+                and Experiments.
               </p>
               <a href="islam.html" class="btn btn-primary">Collection</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
-          <div class="card" style="width: 18rem;">
-              <img src="images/his-pos.jpg" class="card-img-top" height="350px" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">History</h5>
-                <p class="card-text">Let's discover Universe with us by reading top Writters Thoughts and Experiments.
-                </p>
-                <a href="history.html" class="btn btn-primary">Collection</a>
-              </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/his-pos.jpg"
+              class="card-img-top"
+              height="350px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <p class="card-text">
+                Let's discover Universe with us by reading top Writters Thoughts
+                and Experiments.
+              </p>
+              <a href="history.html" class="btn btn-primary">Collection</a>
             </div>
           </div>
-          <!-- <nav aria-label="Page navigation">
+        </div>
+        <!-- <nav aria-label="Page navigation">
             <ul class="pagination">
               <li class="page-item"><a class="page-link" href="library.html">1</a></li>
               <li class="page-item"><a class="page-link" href="poetry.html">2</a></li>
@@ -69,7 +112,35 @@
               <li class="page-item"><a class="page-link" href="poetry.html">Next</a></li>
             </ul>
           </nav> -->
-  </div>
-  </div>
-</body>
+        <div class="modal" id="modal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header row">
+                <div class="modal-title">
+                  <div>
+                    <div id="modal-title">Poetry</div>
+                    <p id="modal-des">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tempora iure
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                    id="modal-img"
+                      src="images/posterpoet.webp"
+                      style="width: 100%"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
