@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="products">
+
+        </div>
+    </div>
+<!-- Modal -->
+   `    
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img id="modal-img" src="" style="width:100%;"/>
+              <p id="modal-title"></p>
+              <p id="modal-des"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <script>
+        var obj = [
+          {
+            name: "Solaris",
+            Image: "images/pg1.webp",
+            des: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          },
+          {
+            name:"Dune",
+            Image:"images/pg2.webp",
+            des: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          },
+          {
+            name:"The Heart Goes Last",
+            Image:"images/heart.webp",
+            des: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+          },
+          {
+            name:"The Power",
+            Image:"images/power.webp",
+            des:"Some quick example text to build on the card title and make up the bulk of the card's content.",
+          },
+          {
+            name:"Borne",
+            Image:"images/borne.webp",
+            des:"Some quick example text to build on the card title and make up the bulk of the card's content.",
+          },
+          {
+            name:"Moonrise",
+            Image:"images/moonrise.webp",
+            des:"Some quick example text to build on the card title and make up the bulk of the card's content.",
+          },
+        ];
+        var r = document.querySelector("#products");
+        for (let i = 0; i < obj.length; i++){
+          r.innerHTML += `<div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+            <div class="card" style="width: 18rem;">
+                          <img src="`+obj[i].Image+`" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">"`+obj[i].name+`"</h5>
+                                <p class="card-text" style="font-size:15px">"`+obj[i].des+`"</p>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#mymodal"`+i+` class="btn btn-primary">Go Somewhere</a>
+                              </div>
+                            </div>
+                          </div>`
+                        //   Card-end
+                        `<div class="modal" id="mymodal"`+i+`>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img id="modal-img" src="`+obj[i].Image+`" style="width:100%;"/>
+              <p id="modal-title">`+obj[i].title+`</p>
+              <p id="modal-des">`+obj[i].des+`</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>`
+
+        }
+    </script>
+
+</body>
+</html>
