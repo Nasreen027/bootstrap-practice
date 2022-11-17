@@ -9,46 +9,80 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <style>
-        .pa{
-            display: none;
-            list-style-type: none;
+        .para1,.para2,.para3,.para4{
+           display: none;
+           list-style-type: none;
         }
-        /* #up{
-            display: none;
-        } */
-        /* #dn{
-            display: none;
-        } */
-        #up{
-            display: none;
+        #up1,#up2,#up3,#up4{
+          display: none;
+        }
+        #ju{
+          display: flex;
+          justify-content: space-between;
         }
     </style>
 </head>
 <body>
     <div class="container mt-5">
   <ul class="list-group">
-    <li id="t" class="list-group-item list-group-item-success">Pakistan
-        <span id="up"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
-        <span id="dn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-        <li class="list-group-item pa"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, rerum</p></li>
+    <li class="list-group-item list-group-item-success" id="pa"><div id="ju">Do I need to open an account in order to shop with you?
+        <span id="up1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+        <span id="dn1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+    </div>
+        <li class="list-group-item para1"><p>No, you do not need to. You can make purchases and check out as a guest everytime.
+
+            However, by setting up an account with us, it will allow you to order without having to enter your details every time you shop with us. You can sign up right now, or you can first start shopping and create your account before you check out at the shopping cart page.</p></li>
     </li>
-    <li class="list-group-item list-group-item-danger">India</li>
-    <li class="list-group-item list-group-item-info">Korea</li>
-    <li class="list-group-item list-group-item-warning">China</li>
+    <li class="list-group-item list-group-item-danger" id="in"><div id="ju">How do I/create an account?
+        <span id="up2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+        <span id="dn2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+    </div>
+        <li class="list-group-item para2"><p>Please click on “Login/Register” followed by ‘Create An Account’ and fill in your personal particulars.</p></li>
+    </li>
+    <li class="list-group-item list-group-item-info" id="k"><div id="ju">How do I order?
+        <span id="up3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+        <span id="dn3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+    </div> 
+        <li class="list-group-item para3"><p>Shop for the items you want and add it to your shopping cart. When you have finished, you can proceed to your shopping cart and check out. Check and ensure that all information is correct before confirming your purchases and payment.</p></li>
+    </li>
+    <li class="list-group-item list-group-item-warning" id="ch"><div id="ju">How will I know if my order is confirmed?
+        <span id="up4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+        <span id="dn4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+    </div>
+        <li class="list-group-item para4"><p>After you have placed your order, you will receive an acknowledgement e-mail from us to confirm that your orders have been received. However, do note that orders will only be shipped when your delivery address is verified. Alternatively, you may check the status of your order in “My Account” if you are a registered user or you can track your order from here.</p></li>
+    </li>
   </ul>
 
     </div>
     <script>
         $(document).ready(function(){
 
-         $("#t").click(function(){
-             $(".pa").slideToggle();
+         $("#pa").click(function(){
+             $(".para1").slideToggle();
+             $("#up1").toggle();
+            $("#dn1").toggle();
+         })
+
+         $("#in").click(function(){
+             $(".para2").slideToggle();
+             $("#up2").toggle();
+            $("#dn2").toggle();
+         })
+
+         $("#k").click(function(){
+             $(".para3").slideToggle();
+             $("#up3").toggle();
+            $("#dn3").toggle();
+         })
+
+         $("#ch").click(function(){
+             $(".para4").slideToggle();
+             $("#up4").toggle();
+            $("#dn4").toggle();
          })
         })
-        $("#t").click(function(){
-            $("#up").toggle();
-            $("#dn").toggle();
-        })
+        
+
     </script>
 </body>
 </html>
