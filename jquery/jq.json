@@ -3,7 +3,8 @@
         {"name":"Book1","price":"1400","image":"images/pg1.webp"},
         {"name":"Book2","price":"2000","image":"images/pg2.webp"},
         {"name":"Book3","price":"1500","image":"images/heart.webp"},
-        {"name":"Book3","price":"2000","image":"image/power.webp"},
+        {"name":"Book3","price":"2000","image":"images/power.webp"},
+        {"name":"Book6","price":"1000","image":"images/borne.webp"},
         {"name":"Book4","price":"2000","image":"images/moonrise.webp"}
 
     ]

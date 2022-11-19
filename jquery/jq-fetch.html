@@ -33,21 +33,21 @@
 
 
       <script>
+         var details = " ";
          $(document).ready(function(){
+  
 
-            var details = " ";
-
-            fetch("jq.json")
-            .then((response)=>response(json))
+            fetch('jq.json')
+            .then((response)=>response.json())
             .then(data=>{
                 for(var i in data.products){
                     details += `<div class="col-md-4 mt-5">
         <div class="card">
             <div class="card-header">
-                <img src="`+data.products[i].image+`" alt="">
-                <div class="card-title">`+data.products[i].name+`</div>
+                <img src="`+data.products[i].image+`" alt="" style="height:200px">
             </div>
             <div class="card-body">
+                <div class="card-title">`+data.products[i].name+`</div>
                 <p class="card-text">`+data.products[i].price+`</p>
             </div>
             <div class="card-footer">
