@@ -1,0 +1,55 @@
+.faq_li{
+    /* display: none!important; */
+   background-color: rgba(240, 232, 232, 0.308);
+}
+#dn1{
+    display: none;
+}
+#dn2{
+    display: none;
+}
+#dn3{
+    display: none;
+}
+#dn4{
+    display: none;
+}
+#dn5{
+    display: none;
+}
+#dn6{
+    display: none;
+}
+#dn7{
+    display: none;
+}
+#dn8{
+    display: none;
+}
+.fq{
+    /* background-color:rgb(181, 225, 238) ; */
+    /* color: gray; */
+    background: linear-gradient(to left bottom,rgb(80, 173, 248),rgb(248, 192, 255));
+
+}
+.faq_c{
+    background-color:rgb(246, 249, 253)
+}
+#q_1{
+    display: none;
+}
+#q_7{
+    display: none;
+}
+#q_3{
+    display: none;
+}
+#q_4{
+    display: none;
+}
+#q_8{
+    display: none;
+}
+#q_6{
+    display: none;
+}
